@@ -1,4 +1,7 @@
 {
     "C_Cpp.errorSquiggles": "disabled",
-    "cmake.sourceDirectory": "/workspaces/programacion-3E251/FTXUI/examples/component"
+    "cmake.sourceDirectory": "/workspaces/programacion-3E251/FTXUI/examples/component",
+    "files.associations": {
+        "iostream": "cpp"
+    }
 }

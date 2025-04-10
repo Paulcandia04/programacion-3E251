@@ -6,7 +6,7 @@ INCLUDE := include
 BIN := bin
 EXE := $(BIN)/$(PROYECTO)
 
-$(EXE) : $(SRC)/memoria.cpp
+$(EXE) : $(SRC)/archivo.cpp
 	c++ $< -o $@ $(LIB) $(CXX) -I$(INCLUDE)
 
 run: $(EXE)
@@ -14,3 +14,8 @@ run: $(EXE)
 
 clean :
 	rm $(BIN)/*
+
+archivo: bin/archivo
+	./$<
+bin/archivo: src/archivo.cpp
+	c++ $< -o $@ -I$(INCLUDE)

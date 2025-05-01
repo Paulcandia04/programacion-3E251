@@ -27,3 +27,9 @@ binario: bin/binario
 
 bin/binario: src/binario.cpp
 	c++ $< -o $@ -I$(INCLUDE)
+
+vector: bin/vector
+	./$<
+
+bin/vector: src/vector.cpp
+	c++ $< -o $@ -I$(INCLUDE)
